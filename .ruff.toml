@@ -1,0 +1,21 @@
+# Global linting and formatting config for ruff
+select = [
+    "I",   # isort
+    "N",   # pep8-naming
+    "F",   # pyflakes - flake8
+    "E",   # pycodesytle - flake8
+    "C90", # mccabe - flake8
+    "D",   # pydocstyle - flake8-docstring
+]
+ignore = ["D104", "D105", "D107", "D206", "D401", "E501"]
+line-length = 130
+
+[lint.isort]
+combine-as-imports = true
+known-first-party = ["behave2cucumber"]
+
+[lint.per-file-ignores]
+"tests/**/test_*.py" = ["D100", "D101", "D102", "D103"]
+
+[lint.pydocstyle]
+convention = "pep257"

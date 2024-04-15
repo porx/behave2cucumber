@@ -7,7 +7,7 @@
         "tags": [
           {
             "line": 2,
-            "name": "tag_a"
+            "name": "@tag_a"
           }
         ],
         "uri": "features/test.feature",
@@ -63,11 +63,11 @@
         "tags": [
           {
             "line": 9,
-            "name": "tag_b"
+            "name": "@tag_b"
           },
           {
             "line": 9,
-            "name": "tag_c"
+            "name": "@tag_c"
           }
         ],
         "uri": "features/test.feature",
@@ -160,7 +160,7 @@
             "result": {
               "status": "failed",
               "duration": 0.00025892257690429688,
-              "error_message": "[u'Traceback (most recent call last):', u'  File /data/home/london/fprincipato/b2c_fix/lib/python2.6/site-packages/behave/model.py, line 1456, in run', u'    match.run(runner.context)', u'  File /data/home/london/fprincipato/b2c_fix/lib/python2.6/site-packages/behave/model.py, line 1903, in run', u'    self.func(context, *args, **kwargs)', u'  File features/steps/test.py, line 17, in step_impl', u'    assert (1 == 2)', u'AssertionError']"
+              "error_message": "['Traceback (most recent call last):', '  File /data/home/london/fprincipato/b2c_fix/lib/python2.6/site-packages/behave/model.py, line 1456, in run', '    match.run(runner.context)', '  File /data/home/london/fprincipato/b2c_fix/lib/python2.6/site-packages/behave/model.py, line 1903, in run', '    self.func(context, *args, **kwargs)', '  File features/steps/test.py, line 17, in step_impl', '    assert (1 == 2)', 'AssertionError']"
             }
           }
         ],
